@@ -5,7 +5,7 @@ The program features a dashboard with charts and maps showing COVID-19 data for 
 
 # Deployed Link : -
 
-https://contact-management-app-teal.vercel.app/
+https://assignmenttaiyo.netlify.app/
 
 # Pages and Functionality
 
