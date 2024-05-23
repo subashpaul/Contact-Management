@@ -33,14 +33,14 @@ export default function reducer(state = initialState, action) {
   switch (action.type) {
     case ADD_CONTACT: {
       let flag = 0
-      if (action.payload.first_name == "" || action.payload.last_name == "") {
+      if (action.payload.first_name === "" || action.payload.last_name === "") {
         alert('ohh You Missed Required Input , Please fill')
         flag = 1
         return state
       }
       else {
         state.contacts.forEach((el) => {
-          if (el.first_name == action.payload.first_name && el.last_name == action.payload.last_name) {
+          if (el.first_name === action.payload.first_name && el.last_name === action.payload.last_name) {
             alert('Name Already Exist In Contact')
             flag = 1
             return
@@ -78,7 +78,7 @@ export default function reducer(state = initialState, action) {
       if (!window.confirm('Are you sure?'))
         return { ...state }
       let Contacts = JSON.parse(localStorage.getItem("contacts"))
-      let updatedContacts = Contacts.filter((el) => el.id != action.payload.id)
+      let updatedContacts = Contacts.filter((el) => el.id !== action.payload.id)
       localStorage.setItem('contacts', JSON.stringify(updatedContacts))
       // console.log(localStorage.getItem("contacts"))
       return {
@@ -86,12 +86,11 @@ export default function reducer(state = initialState, action) {
 
         contacts: [...updatedContacts]
       };
-      break;
     }
 
     case EDIT_CONTACT: {
 
-      if (action.payload.first_name == "" || action.payload.last_name == "") {
+      if (action.payload.first_name === "" || action.payload.last_name === "") {
         alert('Input Fields Can Not Be Leave Empty')
         // flag=1
         return state
@@ -104,7 +103,7 @@ export default function reducer(state = initialState, action) {
         let Contacts = JSON.parse(localStorage.getItem("contacts"))
 
         Contacts.forEach((el) => {
-          if (el.id != action.payload.id && el.first_name == action.payload.first_name && el.last_name == action.payload.last_name) {
+          if (el.id !== action.payload.id && el.first_name === action.payload.first_name && el.last_name === action.payload.last_name) {
             alert("Name Already Exist!!")
             flag = 1
             return state
@@ -116,7 +115,7 @@ export default function reducer(state = initialState, action) {
         }
         else {
           let updatedContacts = Contacts.map((el) => {
-            if (el.id == action.payload.id) {
+            if (el.id === action.payload.id) {
               return el = { ...action.payload }
             }
             else {
@@ -128,7 +127,7 @@ export default function reducer(state = initialState, action) {
           return {
             ...state,
             contacts: state.contacts.map((el) => {
-              if (el.id == action.payload.id) {
+              if (el.id === action.payload.id) {
                 // console.log(action.payload)
                 //  return  el={...action.payload}
 

@@ -1,22 +1,26 @@
 # Contact Management App with Charts and Maps
-This is a contact management app built using ReactJS, JavaScript, TailwindCSS, React Router v6, and Redux. 
-The app includes a dashboard with charts and maps that display COVID-19 data for different countries.
 
-# Deployed Link : - 
+This is a contact management application created with ReactJS, JavaScript, TailwindCSS, React Router v6, and Redux.
+The program features a dashboard with charts and maps showing COVID-19 data for various countries.
+
+# Deployed Link : -
+
 https://contact-management-app-teal.vercel.app/
 
 # Pages and Functionality
+
 The app has two main pages:
 
 # Contacts
-This page allows you to manage your contacts. You can add a new contact by filling out the form, and the contact will be added to the list. You can also edit or delete an existing contact. Clicking on a contact's name will take you to the contact details page.
+
+This page lets you manage your contacts. Fill out the form to add a new contact to the list. You can also modify or remove an existing contact.
 
 # Charts and Maps
-This page displays COVID-19 data for different countries. It includes a line graph showing the cases fluctuations over 
-time and a map with markers that indicate the country name, total number of active, 
-recovered cases, and deaths in that particular country as a popup.
+
+This page displays COVID-19 statistics from several countries. The tool displays a line graph of case fluctuations over time, as well as a map with markers indicating nation names, current cases, recovered cases, and deaths in a popup.
 
 # APIs Used
+
 The app uses the following APIs to fetch data:
 
 - World wide data of cases: https://disease.sh/v3/covid-19/all
@@ -32,12 +36,12 @@ The following technologies were used to build this app:
 - React Router v6
 - React Query
 - Redux
+
 # Installation and Setup
+
 To run this app, follow these steps:
 
-- Clone this repository: git clone https://github.com/your-username/contact-management-app.git
+- Clone this repository: git clone https://github.com/subashpaul/Contact-Management.git
 - Install the dependencies: npm install
 - Start the app: npm start
-- The app should open in your default browser at http://localhost:3000/.
-
-
+- The app should open in your default browser at http://localhost:3000/

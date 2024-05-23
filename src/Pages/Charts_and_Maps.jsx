@@ -13,7 +13,6 @@ import {
   PointElement,
   Title,
   Tooltip,
-  scales,
 } from "chart.js";
 
 import { MapContainer, TileLayer } from "react-leaflet";
